@@ -1,0 +1,126 @@
+body {
+    font-family: 'Chelsea Market', cursive;
+    background-color: #00ff40;
+    text-align: center;
+    -webkit-text-stroke: 1px #000000;
+}
+
+h1 {
+    color: #00eeff;
+    font-size: 90px;
+    margin: -20px;
+}
+
+#Money {
+    color: #ff0000;
+    font-size: 100px;
+    margin-top: 200px;
+}
+
+#Click {
+    display: block;
+    background-color: #00eeff;
+    color: #ff0000;
+    font-size: 60px;
+    font-family: inherit;
+    border-radius: 10px;
+    transition: transform 0.1s ease;
+    transform: scale(1);
+    margin: 360px auto 0 auto;
+}
+
+#Click:hover {
+    transform: scale(1.2);
+}
+
+#Click:active {
+    transform: scale(0.9);
+}
+
+.Upgrade,
+.Upgrade2,
+#MoreGames {
+    will-change: transform;
+}
+
+.Upgrade {
+    background-color: #00eeff;
+    color: #ff0000;
+    font-size: 30px;
+    font-family: inherit;
+    border-radius: 10px;
+    margin: 20px auto;
+    transition: transform 0.1s ease;
+    transform: scale(1);
+}
+
+.Upgrade2 {
+    background-color: #00eeff;
+    color: #ff0000;
+    font-size: 22px;
+    font-family: inherit;
+    border-radius: 10px;
+    margin: 20px auto;
+    transition: transform 0.1s ease;
+    transform: scale(1);
+}
+
+#upgrades {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 600px;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+#upgrades2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 600px;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.Upgrade:hover,
+.Upgrade2:hover {
+    transform: scale(1.1);
+}
+
+.Upgrade:active,
+.Upgrade2:active {
+    transform: scale(0.9);
+}
+
+#MoreGames {
+    display: block;
+    background-color: #00eeff;
+    color: #ff0000;
+    font-size: 50px;
+    font-family: inherit;
+    border-radius: 10px;
+    transition: transform 0.1s ease;
+    transform: scale(1);
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+#MoreGames:hover {
+    transform: scale(1.1);
+}
+
+#MoreGames:active {
+    transform: scale(0.9);
+}
+
+.pop {
+    animation: popAnim 0.05s ease;
+}
+
+@keyframes popAnim {
+    0% { transform: scale(.9); }
+    50% { transform: scale(1.4); }
+    100% { transform: scale(1); }
+}
